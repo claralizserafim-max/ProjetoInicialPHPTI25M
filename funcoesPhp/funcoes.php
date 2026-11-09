@@ -67,22 +67,44 @@
         public function exercicio1(float $a, float $b){
             $this->resultado = $a + $b;
             return $this->resultado;
-        }//fim de exercicio1
+        }//fim de exercício01
 
         public function exercicio2(float $a){
             $this->resultado = $a * 2;
             return $this->resultado;
-        }//fim de exercicio2
+        }//fim de exercício02
 
         public function exercicio3(float $a, float $b, float $c): float{
     return ($a + $b + $c) / 3;
+        }//fim de exercício03
+
+        public function exercicio4(float $a){
+            if ($a < 0) {
+            return "Não existe raiz quadrada real para números negativos >:(";
         }
+            $this->resultado = sqrt($a);
+             return $this->resultado;
+        }//fim de exercício04
 
+        public function exercicio5(float $metros){
+            $this->resultado = $metros * 100;
+            return $this->resultado;
+        }// fim de exercício05
 
+        public function exercicio6(float $raio){
+            $area = M_PI * pow($raio, 2);
+            return $area;
+        }// fim de exercício06
 
+        public function exercicio7(float $b){
+            $soma = $b * 1.8;
+            $this->resultado = $soma + 32;
+            return $this->resultado;
+        }//fim de exercicio07
 
-
-
-
-    }//fim da classe
+        public function exercicio8(float $a){
+            $this->resultado = $a - ($a * 0.10);
+            return $this->resultado;
+        }// fim de exercício08
+}//fim da classe
 ?>
